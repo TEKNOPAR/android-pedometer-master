@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content">
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnChangeDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/icon_calendar"
+                android:drawablePadding="0dp"
+                android:minHeight="50dp"
+                android:minWidth="350dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:paddingTop="-5dp"
+                android:text="Başlangıç"
+                android:textColor="@android:color/white"
+                fbutton:cornerRadius="15dp"
+                fbutton:shadowEnabled="true"
+                fbutton:shadowHeight="6dp"
+                fbutton:buttonColor="@color/maroon"/>
+
+            <TextView
+                android:id="@+id/lblDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Başlangıç: "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dsa"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content">
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnChangeDate2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/icon_calendar"
+                android:drawablePadding="0dp"
+                android:minHeight="50dp"
+                android:minWidth="350dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:paddingTop="-5dp"
+                android:text="Bitiş"
+                android:textColor="@android:color/white"
+                fbutton:cornerRadius="15dp"
+                fbutton:shadowEnabled="true"
+                fbutton:shadowHeight="6dp"
+                fbutton:buttonColor="@color/maroon"/>
+
+            <TextView
+                android:id="@+id/lblDate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bitiş: "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tvDate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dsa"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btnRaporla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:drawableLeft="@drawable/icon"
+        android:drawablePadding="0dp"
+        android:minHeight="50dp"
+        android:minWidth="350dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:paddingTop="-5dp"
+        android:text="Raporla"
+        android:textColor="@android:color/white"
+        fbutton:cornerRadius="15dp"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="6dp"
+        fbutton:buttonColor="@color/fbutton_color_green_sea"/>
+
+
+        <RadioGroup
+            android:id="@+id/radioChart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BarChart"
+            android:id="@+id/rbBarChart"
+            android:layout_gravity="center_horizontal"
+            android:checked="true"
+            android:textSize="18dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LineChart"
+            android:id="@+id/rbLineChart"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textSize="18dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BubbleChart"
+            android:id="@+id/rbPieChart"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textSize="18dp"/>
+        </RadioGroup>
+
+
+
+</LinearLayout>

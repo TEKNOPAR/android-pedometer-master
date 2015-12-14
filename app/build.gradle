@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "name.bagi.levente.pedometer"
+        minSdkVersion 15
+        targetSdkVersion 15
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+}
+repositories {
+    maven { url "https://jitpack.io" }
+    mavenCentral()
+
+}
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile 'com.ikimuhendis:ldrawer:0.1'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.github.PhilJay:MPAndroidChart:v2.1.6'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.google.android.gms:play-services:8.1.0'
+    compile 'info.hoang8f:fbutton:1.0.5'
+    compile 'com.squareup:android-times-square:1.6.4@aar'
+    compile 'com.roomorama:caldroid:2.3.1'
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.facebook.android:facebook-android-sdk:4.1.0'
+    compile 'com.github.bumptech.glide:glide:3.6.0'
+
+    compile "org.apache.httpcomponents:httpmime:4.2.3"
+
+
+
+}

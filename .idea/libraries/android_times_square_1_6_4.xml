@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="android-times-square-1.6.4">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.squareup/android-times-square/1.6.4/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.squareup/android-times-square/1.6.4/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup/android-times-square/1.6.4/640acb4a5730a85a01f4e30b4be3265afab6b2a4/android-times-square-1.6.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

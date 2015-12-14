@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="caldroid-2.3.1">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.roomorama/caldroid/2.3.1/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.roomorama/caldroid/2.3.1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.roomorama/caldroid/2.3.1/cdb5c41f7344405bf32431cbee7d760f29f000e3/caldroid-2.3.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

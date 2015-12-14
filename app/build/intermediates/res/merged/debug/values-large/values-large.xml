@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/EREN/Desktop/android-pedometer-master1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values-large/values-large.xml -->
+    <eat-comment/>
+    <bool name="abc_action_bar_embed_tabs_pre_jb">true</bool>
+    <bool name="abc_config_allowActionMenuItemTextWithIcon">true</bool>
+    <dimen name="abc_config_prefDialogWidth">440dp</dimen>
+    <dimen name="abc_search_view_text_min_width">192dip</dimen>
+    <!-- From: file:/C:/Users/EREN/Desktop/android-pedometer-master1/app/src/main/res/values-large/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="box_width">150px</dimen>
+    <dimen name="button">64sp</dimen>
+    <dimen name="button_sign">24sp</dimen>
+    <dimen name="desired_pace">48sp</dimen>
+    <dimen name="desired_pace_width">192sp</dimen>
+    <!-- From: file:/C:/Users/EREN/Desktop/android-pedometer-master1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values-large/values-large.xml -->
+    <eat-comment/>
+    <item name="dialog_fixed_height_major" type="dimen">60%</item>
+    <item name="dialog_fixed_height_minor" type="dimen">90%</item>
+    <item name="dialog_fixed_width_major" type="dimen">60%</item>
+    <item name="dialog_fixed_width_minor" type="dimen">90%</item>
+    <!-- From: file:/C:/Users/EREN/Desktop/android-pedometer-master1/app/src/main/res/values-large/dimens.xml -->
+    <eat-comment/>
+    <dimen name="distance">40px</dimen>
+    <dimen name="large_half">240px</dimen>
+    <dimen name="margin">10px</dimen>
+    <dimen name="navdrawer_width">270dp</dimen>
+    <dimen name="padding">5px</dimen>
+    <dimen name="row_height">130px</dimen>
+    <dimen name="row_spacing">20px</dimen>
+    <dimen name="small_value">42sp</dimen>
+    <dimen name="step_count">42sp</dimen>
+    <dimen name="third_box_width">103px</dimen>
+    <dimen name="third_box_width_middle">104px</dimen>
+    <dimen name="units">16sp</dimen>
+    <dimen name="value">64sp</dimen>
+    <!-- From: file:/C:/Users/EREN/Desktop/android-pedometer-master1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values-large/values-large.xml -->
+    <eat-comment/>
+    <integer name="abc_max_action_buttons">4</integer>
+    <style name="Base.Theme.AppCompat.DialogWhenLarge" parent="Base.Theme.AppCompat.Dialog.FixedSize"/>
+    <style name="Base.Theme.AppCompat.Light.DialogWhenLarge" parent="Base.Theme.AppCompat.Light.Dialog.FixedSize"/>
+</resources>

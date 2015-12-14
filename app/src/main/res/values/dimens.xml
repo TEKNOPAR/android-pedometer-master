@@ -1,0 +1,70 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!-- Sag ust drawer -->
+    <dimen name="navdrawer_width">270dp</dimen>
+
+
+    <!-- pedometer -->
+    <dimen name="large_half">240px</dimen>
+
+    <dimen name="value">45sp</dimen>
+    <dimen name="small_value">30sp</dimen>
+    <dimen name="step_count">30sp</dimen>
+    <dimen name="units">11sp</dimen>
+    <dimen name="desired_pace">36sp</dimen>
+    <dimen name="desired_pace_width">128sp</dimen>
+
+    <dimen name="button">48sp</dimen>
+    <dimen name="button_sign">24sp</dimen>
+
+    <dimen name="margin">10px</dimen>
+    <dimen name="padding">5px</dimen>
+    <dimen name="row_spacing">10px</dimen>
+
+
+
+
+
+
+    <!-- pickapp oc-->
+    <!-- font sizes -->
+    <dimen name="h1">10sp</dimen>
+    <dimen name="h2">12sp</dimen>
+    <dimen name="h3">14sp</dimen>
+    <dimen name="h4">16sp</dimen>
+    <dimen name="h5">18sp</dimen>
+    <dimen name="h6">20sp</dimen>
+    <dimen name="h7">22sp</dimen>
+    <dimen name="h8">24sp</dimen>
+    <dimen name="h9">26sp</dimen>
+    <dimen name="h10">28sp</dimen>
+    <dimen name="h11">30sp</dimen>
+
+
+    <!-- padding/margin sizes -->
+    <dimen name="s0">1.5dp</dimen>
+    <dimen name="s1">3dp</dimen>
+    <dimen name="s2">6dp</dimen>
+    <dimen name="s3">9dp</dimen>
+    <dimen name="s4">12dp</dimen>
+    <dimen name="s5">15dp</dimen>
+
+
+    <!-- icon sizes -->
+    <dimen name="p1">27dp</dimen>
+    <dimen name="p2">40dp</dimen>
+    <dimen name="p3">50dp</dimen>
+    <dimen name="p4">50dp</dimen>
+    <dimen name="p5">70dp</dimen>
+    <dimen name="p6">95dp</dimen>
+
+
+    <!-- others -->
+    <dimen name="standing_item_padding">5dp</dimen>
+
+
+</resources>

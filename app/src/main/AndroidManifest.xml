@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="name.bagi.levente.pedometer"
+    android:installLocation="auto" >
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Permissions -->
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- gps permissions -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- google plus permissions -->
+    <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <!-- sil -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="com.example.googlemaps.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/stepicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- google play gps -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBcqhM6DWCOTcdilkew1fbDJ4oV9yazgzA" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+
+        <activity
+            android:name=".signinup.LoginScreen"
+            android:label="Giriş Yap" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Options"
+            android:label="@string/ayarlar" >
+        </activity>
+        <activity
+            android:name=".Pedometer"
+            android:configChanges="orientation"
+            android:label="Adım Sayıcı" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".pedometer.Settings"
+            android:label="@string/activity_settings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MyProfile"
+            android:label="Profilim" >
+        </activity>
+        <activity
+            android:name=".report.StepReport"
+            android:label="Raporlar" >
+        </activity>
+        <activity
+            android:name=".report.StepReport2"
+            android:label="Raporlar" >
+        </activity>
+        <activity
+            android:name=".report.StepReport3"
+            android:label="Raporlar" >
+        </activity>
+        <activity
+            android:name=".report.StepReportPieChart"
+            android:label="Raporlar" >
+        </activity>
+        <activity
+            android:name=".report.Report"
+            android:label="Raporlar" >
+        </activity>
+        <activity
+            android:name=".Map"
+            android:label="Haritalama" >
+        </activity>
+        <activity
+            android:name=".GetGPS"
+            android:label="Konum Bilgileri" >
+        </activity>
+        <activity
+            android:name=".Main"
+            android:label="Mobil Sağlık" >
+        </activity>
+        <activity
+            android:name=".GooglePlusLogin"
+            android:label="Mobil Sağlık" >
+        </activity>
+        <activity
+            android:name=".signinup.SignUp"
+            android:label="Kayıt Ol" >
+        </activity>
+        <activity
+            android:name=".signinup.Login"
+            android:label="Giriş Yap" >
+        </activity>
+        <activity
+            android:name=".signinup.GooglePlusLoginActivity"
+            android:label="Giriş Yap" >
+        </activity>
+
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="Giriş Yap" >
+        </activity>
+
+        <activity
+            android:name=".ui.AccessTokenActivity"
+            android:label="Giriş Yap" >
+        </activity>
+
+        <activity
+            android:name=".ImageUploadTest"
+            android:label="Giriş Yap" >
+        </activity>
+
+        <activity
+            android:name=".imageupload.UploadActivity"
+            android:label="Giriş Yap" >
+        </activity>
+
+        <activity
+            android:name=".Map2"
+            android:label="Giriş Yap" >
+        </activity>
+
+        <activity
+            android:name=".FacebookLoginActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service android:name=".StepService" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+
+
+        <!-- Google MAP API key -->
+
+
+
+
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" >
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+    </application>
+
+</manifest>

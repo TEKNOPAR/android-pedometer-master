@@ -1,0 +1,210 @@
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ustprofil"
+            app:civ_border_width="5dp"
+            app:civ_border_color="#1454a4"
+            android:id="@+id/profilResmi"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Temel Bilgiler"
+                android:id="@+id/textView2"
+                android:layout_marginTop="2dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Ad: "
+                    android:id="@+id/Ad"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=". "
+                    android:id="@+id/txtgpProfilAd"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="15dp"
+
+                    />
+
+
+            </LinearLayout><![CDATA[
+
+            />
+
+
+        ]]>
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="E-Mail:"
+            android:id="@+id/Soyad"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=". "
+            android:id="@+id/txtgpEmail"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="15dp"
+
+            />
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="GP ID:"
+                android:id="@+id/gpId"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=". "
+                android:id="@+id/txtgpId"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="64dp"
+                android:layout_marginRight="15dp"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Giriş Tipi:"
+                android:id="@+id/userTypeText"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=". "
+                android:id="@+id/txtUserType"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="38dp"
+                android:layout_marginRight="15dp"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- The navigation drawer -->
+    <ListView
+
+        android:id="@+id/navdrawer"
+        android:layout_width="@dimen/navdrawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:drawSelectorOnTop="false">
+    </ListView>
+
+</android.support.v4.widget.DrawerLayout>

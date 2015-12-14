@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="@dimen/s2" >
+
+    <TextView
+        android:id="@+id/tvMemberSignupTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/h6"
+        android:text="@string/member_signup"
+        android:textColor="@color/holo_orange_light"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/llMemberSignupNameContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMemberSignupTitle"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/s3"
+        android:weightSum="1.0" >
+
+        <EditText
+            android:id="@+id/etAd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:inputType="textPersonName"
+            android:layout_marginRight="@dimen/s1"
+            android:layout_marginEnd="@dimen/s1"
+            android:textSize="@dimen/h4"
+            android:padding="@dimen/s2"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:hint="@string/member_signup_firstname" />
+
+        <EditText
+            android:id="@+id/etSoyad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="@dimen/s2"
+            android:layout_marginLeft="@dimen/s1"
+            android:layout_marginStart="@dimen/s1"
+            android:textSize="@dimen/h4"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:hint="@string/member_signup_lastname" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llMemberSignupPhoneContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llMemberSignupNameContainer"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etLoginSifre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llMemberSignupPhoneContainer"
+        android:padding="@dimen/s2"
+        android:layout_marginTop="@dimen/s3"
+        android:textSize="@dimen/h4"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:hint="@string/member_signup_password" />
+
+    <EditText
+        android:id="@+id/etLoginEposta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etLoginSifre"
+        android:padding="@dimen/s2"
+        android:layout_marginTop="@dimen/s3"
+        android:textSize="@dimen/h4"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:hint="@string/member_signup_email" />
+
+    <Button
+        android:id="@+id/btnUyeOl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etLoginEposta"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/s3"
+        android:textSize="@dimen/h4"
+        android:textColor="@color/white"
+        android:background="@drawable/selector_button_yellow"
+        android:text="@string/member_signup" />
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/EREN/Desktop/android-pedometer-master1/app/src/main/res/layout/sign_up.xml -->

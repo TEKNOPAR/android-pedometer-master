@@ -1,0 +1,102 @@
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chartmp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/btnBarChart" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bar Chart"
+        android:id="@+id/btnBarChart"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Toplam"
+        android:id="@+id/textView8"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnBarChart"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Adım"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/textView8"
+        android:layout_alignRight="@+id/textView8"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="7600"
+        android:id="@+id/textView10"
+        android:textStyle="bold"
+        android:textSize="48dp"
+        android:layout_marginRight="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/stepicon"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_toLeftOf="@+id/textView8" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pie Chart"
+        android:id="@+id/btnPieChart"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+
+</RelativeLayout>
+
+    <!-- The navigation drawer -->
+<ListView
+android:id="@+id/navdrawer"
+android:layout_width="@dimen/navdrawer_width"
+android:layout_height="match_parent"
+android:layout_gravity="start"
+android:background="@android:color/white"
+android:choiceMode="singleChoice"
+android:divider="@android:color/darker_gray"
+android:dividerHeight="1dp"
+android:drawSelectorOnTop="false">
+</ListView>
+</android.support.v4.widget.DrawerLayout>
+<!-- From: file:/C:/Users/EREN/Desktop/android-pedometer-master1/app/src/main/res/layout/stepreport2.xml -->

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\EREN\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.2.2\b76bee23cd3f3ee9b98bc7c2c14670e821ddbbfd\httpcore-4.2.2.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="b76bee23cd3f3ee9b98bc7c2c14670e821ddbbfd">
+        <dex dex="C:\Users\EREN\Desktop\android-pedometer-master1\app\build\intermediates\pre-dexed\debug\httpcore-4.2.2-f91beafc2545530d0a4b8cfa0065c358b1dca995.jar" />
+    </item>
+    <item
+        jar="C:\Users\EREN\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpmime\4.2.3\118ae1bc7f3aeeddfe564f0edfd79c11d09d17d1\httpmime-4.2.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="118ae1bc7f3aeeddfe564f0edfd79c11d09d17d1">
+        <dex dex="C:\Users\EREN\Desktop\android-pedometer-master1\app\build\intermediates\pre-dexed\debug\httpmime-4.2.3-66428eac248d134844e49415eb87e100cbcb39d6.jar" />
+    </item>
+
+</items>

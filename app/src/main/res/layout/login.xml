@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="@dimen/s2" >
+
+    <TextView
+        android:id="@+id/tvMemberSignupTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/h6"
+        android:text="Giriş Yap"
+        android:textColor="@color/holo_orange_light"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/llMemberSignupNameContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMemberSignupTitle"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/s3"
+        android:weightSum="1.0" >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llMemberSignupPhoneContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llMemberSignupNameContainer"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etLoginEposta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/s2"
+        android:textSize="@dimen/h4"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:hint="@string/member_signup_email"
+        android:layout_below="@+id/llMemberSignupNameContainer"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/etLoginSifre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/s2"
+        android:textSize="@dimen/h4"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:hint="Şifre"
+        android:layout_marginTop="@dimen/s3"
+        android:layout_below="@+id/etLoginEposta"
+        android:layout_alignParentRight="true" />
+
+
+    <Button
+        android:id="@+id/btnCheckLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/h4"
+        android:textColor="@color/white"
+        android:background="@drawable/selector_button_yellow"
+        android:text="Giriş"
+        android:layout_below="@+id/etLoginSifre"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/s3"
+        />
+
+</RelativeLayout>
